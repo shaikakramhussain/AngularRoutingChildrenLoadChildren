@@ -1,0 +1,19 @@
+<p>comment-data works!</p>
+<hr><br>
+<table *ngIf="commentData">
+  <tr>
+    <th>Post Id</th>
+    <th>Id</th>
+    <th>Name</th>
+    <th>Email</th>
+    <th>Body</th>
+  </tr>
+  <tr *ngFor='let d1 of fetchData1'>
+    <td>{{d1.postId}}</td>
+    <td>{{d1.id}}</td>
+    <td>{{d1.name}}</td>
+    <td>{{d1.email}}</td>
+    <td>{{d1.body}}</td>
+  </tr>
+</table>
+<hr><hr>

@@ -1,0 +1,38 @@
+<p>users works!</p>
+<table>
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>User Name</th>
+        <th>Email</th>
+        <th>Street</th>
+        <th>suite</th>
+        <th>City</th>
+        <th>ZipCode</th>
+        <th>Lat</th>
+        <th>Lng</th>
+        <th>Phone</th>
+        <th>Website</th>
+        <th>Name</th>
+        <th>CatchPhrase</th>
+        <th>Bs</th>
+    </tr>
+    <tr *ngFor= 'let d3 of fetchData3'>
+        <td>{{d3.id}}</td>
+        <td>{{d3.name}}</td>
+        <td>{{d3.username}}</td>
+        <td>{{d3.email}}</td>
+        <td>{{d3.address.street}}</td>
+        <td>{{d3.address.suite}}</td>
+        <td>{{d3.address.city}}</td>
+        <td>{{d3.address.zipcode}}</td>
+        <td>{{d3.address.geo.lat}}</td>
+        <td>{{d3.address.geo.lng}}</td>
+        <td>{{d3.phone}}</td>
+        <td>{{d3.website}}</td>
+        <td>{{d3.company.name}}</td>
+        <td>{{d3.company.catchPhrase}}</td>
+        <td>{{d3.company.bs}}</td>
+
+    </tr>
+</table>

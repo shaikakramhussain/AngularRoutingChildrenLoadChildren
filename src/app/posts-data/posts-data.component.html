@@ -1,0 +1,27 @@
+<h1>Angular Crud Practice</h1>
+<hr>
+<h2>https://jsonplaceholder.typicode.com/posts</h2>
+<hr>
+
+<button class="btn"  (click)='postData()'>Click to view Posts Table Data</button> &nbsp;&nbsp;&nbsp;
+<button class="btn" routerLink="">Click to go back</button> &nbsp;&nbsp;&nbsp;
+
+<br>
+<hr><br>
+<br>
+<hr><br>
+<table *ngIf="pData">
+  <tr>
+    <th>User Id</th>
+    <th>Id</th>
+    <th>Title</th>
+    <th>Body</th>
+  </tr>
+  <tr *ngFor='let d of fetchData'>
+    <td>{{d.userId}}</td>
+    <td>{{d.id}}</td>
+    <td>{{d.title}}</td>
+    <td>{{d.body}}</td>
+  </tr>
+</table>
+<hr><hr>

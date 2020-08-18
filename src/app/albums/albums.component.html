@@ -1,0 +1,18 @@
+<p>albums works!</p>
+
+<button class="btn" routerLink='albumChild'>CLick ME <br>To Navigate to Children</button>
+<br>
+<router-outlet></router-outlet>
+<hr>
+<table>
+    <tr>
+        <th>User Id</th>
+        <th>Id</th>
+        <th>Title</th>
+    </tr>
+    <tr *ngFor='let d2 of fetchData2'>
+        <td>{{d2.userId}}</td>
+        <td>{{d2.id}}</td>
+        <td>{{d2.title}}</td>
+    </tr>
+</table>

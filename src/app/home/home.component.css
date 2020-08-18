@@ -1,0 +1,16 @@
+table,th,td{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+th,td{
+    padding: 2px;
+}
+.btn{
+    height: 70px;
+    width: 110px;
+    color: blue;
+}
+.vl {
+    border-left: 6px solid green;
+    height: 50px;
+  }
